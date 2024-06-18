@@ -31,12 +31,13 @@
 		height:70px;
 		width:30%;
 		background-color:#ffffff ;
+		display: inline-flex;
 		
 	}
 	.icon-sy1{
 		 height:30px;
 		 width:30px;
-	     margin-left:320px;
+	     margin-left:220px;
 		 margin-top:18px;
 		background-color: #ebe5e5;
 		border-radius:20px;
@@ -50,6 +51,19 @@
 		margin-top:5px;
 
 	}
+	.sym-1{
+		width:70%;
+		height:70px;
+		
+	}
+	.sym-2{
+		width:30%;
+		height:80px;
+		
+	}
+
+	
+	
 	.icon1{
 		height:70px;
 		width:30%;
@@ -91,6 +105,39 @@
 		background-color:#f8f8f8;
 
 	}
+	h2{
+		font-size:20px;
+		margin-top:30px;
+		font-family: 'Times New Roman', Times, serif;
+	}
+	.pri-1{
+	     margin-top:20px;
+		width:180px;
+	}
+	.main-div-right1{
+		width:70%;
+		height:100px;
+		background-color: #f8f8f8;
+		margin-top:10px;
+	}
+	.plt-img{
+		width:100px;
+		height:100px;
+	}
+	.main-div-right2{
+		width:70%;
+		height:100px;
+		background-color: aqua;
+		margin-top:10px;
+	}
+
+	.main-div-right3{
+		width:70%;
+		height:100px;
+		background-color: aqua;
+		margin-top:10px;
+	}
+	
 	.main-div1-left{
 		width:25%;
 		height:70%;
@@ -99,6 +146,10 @@
 		margin-top:30px;
 
 
+	}
+	.rat-1{
+		margin-left:5px;
+		
 	}
 	.img1{
 		width:221px;
@@ -157,6 +208,13 @@
 		margin-top:6px;
 
 	}
+	.rat-2{
+		
+	}
+	.rat-3{
+		margin-left:100px;
+
+	}
 	
 	
 </style>
@@ -175,10 +233,16 @@
 				</ul>
 			</div>
 		</div>
-		<div class="navbar-right">
+		   <div class="navbar-right">
+			<div class="sym-1">
+			<i class="fa-solid fa-magnifying-glass src-1"></i>
+		    </div>
+		    <div class="sym-2">
 			<div class="icon-sy1">
 				<i class="fa-solid fa-cart-shopping myicons1"></i>
 			</div>
+		    </div>
+			
 		</div>
 	</div>
 	<div class="main-div">
@@ -234,7 +298,38 @@
 
 
 
-		<div class="main-div-right"></div>
+		<div class="main-div-right">
+			<h2>Filter by price</h2>
+			<input class="pri-1"type="range">
+			<div class="rat-1" >
+			<label class="rat-2">150$</label>
+			<label class="rat-3">1500$</label>
+		    </div>
+			
+			<h2>Plant available</h2>
+			<div style="display: inline-flex;" class="main-div-right1">
+				<img class="plt-img"src="img/p8.jpg">
+				<div style="padding: 10px;">
+				<h4 style="margin-top: 20px;">Spathiphyllum</h4>
+				<label>Rs.300</label>
+			</div>
+			</div>
+			<div style="display: inline-flex;" class="main-div-right1">
+				<img class="plt-img"src="img/p11.webp">
+				<div style="padding: 10px;">
+				<h4 style="margin-top: 20px;">Dieffenbachies</h4>
+				<label>Rs.350</label>
+			</div>
+			</div>
+			<div style="display: inline-flex;" class="main-div-right1">
+				<img class="plt-img"src="img/p4.jpg">
+				<div style="padding: 10px;">
+				<h4 style="margin-top: 20px;">Cast iron plants</h4>
+				<label>Rs.430</label>
+			</div>
+			</div>
+
+		</div>
 	</div>
 	
 </body>
