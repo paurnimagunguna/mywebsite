@@ -13,7 +13,11 @@
 <script>
 	function concat(){
 		var name=document.getElementById("name").value;
-		var res= "Hello " + name + "";
-         document.getElementById("result").innerHTML=res;
+		if(name != ''){
+	    document.getElementById("result").innerHTML= " welcome " + name;
+        }
+        else{
+        	  document.getElementById("result").innerHTML='';
+        }
 	}
 </script>
