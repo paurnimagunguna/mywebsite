@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+	body{
+		background-color:#dfe8d7;
+	
+</style>
+<body>
+	<center>
+      <input type="number" id="num1" name="" placeholder="Enter first number">
+      <br>
+      <br>
+      <input type="number" id="num2" name="" placeholder="enter second number">
+       <br>
+        <br>
+        <h4 id="result"></h4>
+       <button onclick="addition()">add</button>
+       <button onclick="substraction()">sub</button>
+       <button onclick="multiplication()">mul</button>
+       <button onclick="divistion()">div</button>
+       
+
+   </center>
+</body>
+</html>
+<script>
+	function addition(){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+
+		var res=parseInt(num1) + parseInt(num2);
+		document.getElementById("result").innerHTML=res;
+
+	}
+	function substraction(){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+
+		var res=parseInt(num1) - parseInt(num2);
+		document.getElementById("result").innerHTML=res;
+
+	}
+	function multiplication(){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+
+		var res=parseInt(num1) * parseInt(num2);
+		document.getElementById("result").innerHTML=res;
+
+	}
+	function divistion(){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+
+		var res=parseInt(num1) / parseInt(num2);
+		document.getElementById("result").innerHTML=res;
+
+	}
+</script>

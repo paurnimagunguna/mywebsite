@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center>
+	<input type="text" id="name" name="" placeholder="Enter name" onkeyup="concat()">
+     <h4 id="result"></h4>
+    </center>
+</body>
+</html>
+<script>
+	function concat(){
+		var name=document.getElementById("name").value;
+		var res= "Hello " + name + "";
+         document.getElementById("result").innerHTML=res;
+	}
+</script>

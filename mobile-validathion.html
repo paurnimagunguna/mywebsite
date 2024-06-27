@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <center>
+  <input type="number" id="mobile_number" name="" placeholder="Enter mobile number">
+  <button onclick="check_number()">check</button>
+  </center>
+</body>
+</html>
+<script>
+  function check_number(){
+    var mobile_number=document.getElementById("mobile_number").value;
+    
+    if(mobile_number.length != 10){
+      alert("please enter correct number")
+    }
+    else{
+      alert("correct mobile_number")
+    }
+</script>

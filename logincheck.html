@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+    .main-box{
+        width: 400px;
+        height:400px;
+        background-color: rgba(192, 117, 20, 0.735);
+    }
+</style>
+<body>
+	<center>
+        <div class="main-box">
+   <br>
+   <input type="text" id="name" name="" placeholder="Enter your full name ">
+   <br><br>
+   <input type="text" id="e_mail" name="" placeholder="Enter your e-mail">
+   <br><br>
+   <input type="password" id="password" name="" placeholder="Enter password">
+   <br><br>
+   <input type="text" id="mobile" name="" placeholder="Enter mobile">
+   <br><br>
+   <button onclick="checkinfo()">Submit</button>
+</div>
+</center>
+</body>
+</html>
+<script>
+    function checkinfo(){
+    
+	var name=document.getElementById("name").value;
+    var pass=document.getElementById("password").value;
+    var e_mail=document.getElementById("e_mail").value;
+    var mobile=document.getElementById("mobile").value;
+
+    if(name == ''){
+    alert("please enter your full name");
+    } 
+
+     else if(e_mail == ''){
+        alert("please enter correct e-mail");
+    }
+	
+    else if(pass == ''){
+        alert("please enter password");
+    }
+    else if(pass.length != 8){
+        alert("please enter 8 digit password");
+    }
+	
+     else if(mobile == ''){
+        alert("please enter mobile number");
+     }
+     else if(mobile.length <10) {
+        alert("please enter 10 digit mobile number");
+     }
+     else{
+        alert("all correct");
+     }
+   
+  }
+</script>
