@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+	.main_div{
+		width:30%;
+		height: 80px;
+		background-color:aqua;
+		margin-top:100px;
+	}
+	.sec_div{
+		width:30%;
+		height:50vh;
+		background-color:black;
+	
+	}
+	.btn{
+		width:70px;
+		height: 30px;
+		margin-right:10px;
+		margin-top:15px;
+
+	}
+	
+</style>
+<body>
+	  <center>
+	  <div class="main_div">
+	  	 <h3 id="result"></h3>
+	  	 </div>
+
+      <div class="sec_div">
+     
+      	<button class="btn" onclick="addition()">+</button>
+      	<button class="btn" onclick="substraction()">-</button>
+      	<button class="btn" onclick="multiplication()">*</button>
+      	<button class="btn" onclick="division()">/</button>
+        <button class="btn" id="num_7" onclick="substraction()">7</button>
+      	<button class="btn" id="num_8" onclick="substraction()">8</button>
+      	<button class="btn" id="num_9" onclick="substraction()">9</button>
+        <button class="btn" id="num1" onclick="substraction()">%</button>
+        <br>
+      	<button class="btn" id="num_4" onclick="substraction()">4</button>
+      	<button class="btn" id="num_5" onclick="multiplication()">5</button>
+      	<button class="btn" id="num_6" onclick="substraction()">6</button>
+      	<button class="btn" id="num1" onclick="substraction()">AC</button>
+      	<br>
+
+        <button class="btn" id="num_1" onclick="substraction()">1</button>
+      	<button class="btn" id="num_2" onclick="substraction()">2</button>
+      	<button class="btn" id="num_3" onclick="substraction()">3</button>
+      	<button class="btn" id="num1" onclick="substraction()">Del</button>
+      	<br>
+      	  
+      	<button class="btn" id="num1" onclick="substraction()">.</button>
+     	<button class="btn" id="num_0" onclick="substraction()">0</button>
+      	<button class="btn" id="num_00" onclick="substraction()">00</button>
+      	<button class="btn" id="num1" onclick="substraction()">=</button>
+      	
+
+      </div>
+      
+    
+      </center>
+</body>
+</html>
+<script>
+	
+
+	function addition(){
+		 var res=(10 + 5);
+
+		if(document.getElementById("result").innerHTML== res){
+
+			document.getElementById("result").innerHTML= res;
+		}
+            
+	}
+	function substraction(){
+		 var res=(10-5);
+       document.getElementById("result").innerHTML=res;
+      }
+
+	function multiplication(){
+		  var res=(10*5);
+       document.getElementById("result").innerHTML=res;
+       }
+
+	function division(){
+		 var res=(10/5);
+        document.getElementById("result").innerHTML=res;
+       }
+ 
+</script>
