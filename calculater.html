@@ -42,27 +42,27 @@
       	<button class="btn" onclick="substraction()">-</button>
       	<button class="btn" onclick="multiplication()">*</button>
       	<button class="btn" onclick="division()">/</button>
-        <button class="btn" id="num_7" onclick="addition()">7</button>
-      	<button class="btn" id="num_8" onclick="addition()">8</button>
-      	<button class="btn" id="num_9" onclick="addition()">9</button>
-        <button class="btn" id="num1" onclick="addition()">%</button>
+        <button class="btn" id="num_7" onclick="num7()">7</button>
+      	<button class="btn" id="num_8" onclick="num8()">8</button>
+      	<button class="btn" id="num_9" onclick="num9()">9</button>
+        <button class="btn" id="num1" onclick="persentage()">%</button>
         <br>
-      	<button class="btn" id="num_4" onclick="addition()">4</button>
-      	<button class="btn" id="num_5" onclick="addition()">5</button>
-      	<button class="btn" id="num_6" onclick="addition()">6</button>
-      	<button class="btn" id="num2" onclick="addition()">AC</button>
+      	<button class="btn" id="num_4" onclick="num4()">4</button>
+      	<button class="btn" id="num_5" onclick="num5()">5</button>
+      	<button class="btn" id="num_6" onclick="num6()">6</button>
+      	<button class="btn" id="num2" onclick="clearfun()">AC</button>
       	<br>
 
-        <button class="btn" id="num_1" onclick="addition()">1</button>
-      	<button class="btn" id="num_2" onclick="addition()">2</button>
-      	<button class="btn" id="num_3" onclick="addition()">3</button>
-      	<button class="btn" id="num3" onclick="addition()">Del</button>
+        <button class="btn" id="num_1" onclick="num1()">1</button>
+      	<button class="btn" id="num_2" onclick="num2()">2</button>
+      	<button class="btn" id="num_3" onclick="num3()">3</button>
+      	<button class="btn" id="num3" onclick="delfun()">Del</button>
       	<br>
       	  
-      	<button class="btn" id="num1" onclick="addition()">.</button>
-     	<button class="btn" id="num_0" onclick="addition()">0</button>
+      	<button class="btn" id="num_dot" onclick="dotfun()">.</button>
+     	<button class="btn" id="num_0" onclick="num0()">0</button>
       	<button class="btn" id="num_00" onclick="addition()">00</button>
-      	<button class="btn" id="num4" onclick="addition()">=</button>
+      	<button class="btn" id="equal" onclick="isequal()">=</button>
       	
 
       </div>
@@ -73,25 +73,217 @@
 </html>
 <script>
 
-	function addition(){
-		 var res=(10 + 5);
+	// function addition(){
 
-		document.getElementById("result").innerHTML=res;
+	// 	 var res=(10 + 5);
+
+	// 	document.getElementById("result").innerHTML=res;
             
+	// }
+	// function substraction(){
+	// 	 var res=(10-5);
+ //       document.getElementById("result").innerHTML=res;
+ //      }
+
+	// function multiplication(){
+	// 	  var res=(10*5);
+ //       document.getElementById("result").innerHTML=res;
+ //       }
+
+	// function division(){
+	// 	 var res=(10/5);
+ //        document.getElementById("result").innerHTML=res;
+ //       }
+
+
+var number1 = '';
+var operation = '';
+var number2 = '';
+
+
+function num1(){
+	
+	if(operation == ''){
+		document.getElementById("result").innerHTML = "1";
+		 number1 = "1";
+		console.log(number1);
+		
 	}
-	function substraction(){
-		 var res=(10-5);
-       document.getElementById("result").innerHTML=res;
-      }
+	else{
+		document.getElementById("result").innerHTML = number1 +  operation + "1";
+	    number2 = "1";
+		console.log(number2);
+	}
+	
 
-	function multiplication(){
-		  var res=(10*5);
-       document.getElementById("result").innerHTML=res;
-       }
+}
 
-	function division(){
-		 var res=(10/5);
-        document.getElementById("result").innerHTML=res;
+function num2(){	
+	if(operation == ''){
+	
+		document.getElementById("result").innerHTML = "2";
+		number1 = "2";
+		alert("okk");
+		console.log(number1);
+
+	}
+	else{
+		document.getElementById("result").innerHTML = number1 +  operation + "2";
+		number2 = "2";
+		console.log(number2);
+	}
+
+}
+
+function num3(){
+	if (operation == '') {
+		document.getElementById("result").innerHTML = "3";
+		number1 = "3";
+	}
+	else{
+		document.getElementById("result").innerHTML = number1 +  operation + "3";
+		number2 = "3";
+	}
+	
+
+}
+
+function num4(){
+	if(operation == ''){
+	   document.getElementById("result").innerHTML = "4";
+	    number1 = "4";
+    }
+    else{
+    	document.getElementById("result").innerHTML = number1 +  operation + "4";
+		number2 = "4";
+	}
+ }
+
+function num5(){
+	if(operation == ''){
+     document.getElementById("result").innerHTML = "5";
+     number1 = "5";
+	}
+	else{
+		document.getElementById("result").innerHTML = number1 +  operation + "5";
+		number2 = "5";
+	}
+
+function num6(){
+	if(operation == ''){
+		document.getElementById("result").innerHTML = "6";
+	    number1 = "6";
+	}
+	else{
+		document.getElementById("result").innerHTML = number1 +  operation + "6";
+		number2 = "6";
+	}
+}
+function num7(){
+     if(operation == ''){
+     	document.getElementById("result").innerHTML = "7";
+	    number1 = "7";
+	}
+	else{
+		document.getElementById("result").innerHTML = number1 +  operation + "7";
+		number2 = "7";
+	}
+
+}
+
+function num8(){
+	if(operation == ''){
+        document.getElementById("result").innerHTML = "8";
+        number1 = "8";
        }
- 
+       else{
+       	  document.getElementById("result").innerHTML = number1 +  operation + "8";
+		   number2 = "8";
+       }
+	
+}
+
+function num9(){
+	if(operation == ''){
+        document.getElementById("result").innerHTML = "9";
+        number1 = "9";
+    }
+    else{
+    	document.getElementById("result").innerHTML = number1 +  operation + "9";
+		   number2 = "9";
+    }
+	
+}
+
+function num0(){
+	if(operation == ''){
+	document.getElementById("result").innerHTML = "0";
+	number1 = "0";
+	}
+	else{
+		document.getElementById("result").innerHTML = number1 +  operation + "9";
+		   number2 = "9";
+	}
+
+}
+
+function addition(){
+	operation = '+';
+	document.getElementById("result").innerHTML = number1 +  '+';
+}
+function substraction(){
+	operation = '-';
+	document.getElementById("result").innerHTML = number1 +  '-';
+}
+
+function multiplication(){
+	operation = '*';
+	document.getElementById("result").innerHTML = number1 +  '*';
+}
+
+function division(){
+	operation = '/';
+	document.getElementById("result").innerHTML = number1 +  '/ ';
+}
+
+function persentage(){
+	operation ='%';
+	document.getElementById("result").innerHTML = number1 +  '%';
+}
+
+
+
+ function isequal(){
+ 	var n1 = number1;
+ 	var op = operation;
+ 	var n2 = number2;
+ 	var total = '';
+
+ 	if(operation == '+'){
+ 		total = parseInt(n1)+parseInt(n2);
+ 	}
+ 	else if (operation == '-') {
+ 		total = parseInt(n1)-parseInt(n2);
+ 	}
+ 	else if (operation == '*') {
+ 		total = parseInt(n1)*parseInt(n2);
+ 	}
+ 	else{
+ 		total = parseInt(n1)/parseInt(n2);
+ 	}
+ 	console.log(total);
+    document.getElementById("result").innerHTML = total;
+ }
+
+function clearfun(){
+	document.getElementById("result").innerHTML = "";
+	number1 = "";
+	number2 = "";
+	operation = "";
+}
+function (){
+	number1 = "";
+	number2 = "";
+	operation = "";
+}
 </script>
